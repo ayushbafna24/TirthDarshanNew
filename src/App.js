@@ -13,8 +13,7 @@ function App() {
         hlsConfig={{
           maxLoadingDelay: 4,
           minAutoBitrate: 0,
-          lowLatencyMode: true,
-          enableWorker: true
+          lowLatencyMode: true
         }}
       />
     </div>
