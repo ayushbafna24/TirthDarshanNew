@@ -7,11 +7,15 @@ function App() {
     <div className="App">
       <ReactHlsPlayer
         src="http://tirth.onrender.com/live/Tirth/index.m3u8"
-        autoPlay
         controls={true}
         width="100%"
         height="auto"
-        loop={true}
+        hlsConfig={{
+          maxLoadingDelay: 4,
+          minAutoBitrate: 0,
+          lowLatencyMode: true,
+          enableWorker: true
+        }}
       />
     </div>
   );
