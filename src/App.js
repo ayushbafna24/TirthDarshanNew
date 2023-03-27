@@ -11,6 +11,8 @@ function App() {
         playerRef={playerRef}
         src="http://tirth.onrender.com/live/Tirth/index.m3u8"
         controls={true}
+        width="100%"
+        height="auto"
       />
     </div>
   );
